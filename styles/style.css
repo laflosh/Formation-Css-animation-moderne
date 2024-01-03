@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 80px;
   margin: 40px;
 }
 
@@ -16,6 +17,54 @@ body {
 }
 .btn_1:hover {
   transform: scale(1.15);
+}
+
+.container_2 {
+  background-color: rgb(237, 246, 247);
+}
+
+.form__group {
+  color: #6300a0;
+  font-family: "Montserrat", sans-serif;
+}
+.form__group input {
+  border: 2px solid #fff;
+  border-radius: 100rem;
+  font-size: 2.5rem;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  transition: background-color 500ms;
+}
+.form__group input:focus {
+  border: 2px solid #6300a0;
+}
+.form__group input:not(:focus):invalid {
+  background: #b20a37;
+  border: 2px solid #b20a37;
+  color: #fff;
+}
+
+.btn_2 {
+  background: #011c37;
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
+}
+.btn_2:active + .ball {
+  transform: scale(1);
+}
+
+.ball {
+  width: 300px;
+  height: 300px;
+  background: #15DEA5;
+  margin-bottom: 1rem;
+  border-radius: 150px;
+  transform: scale(0.1);
+  transition: transform 4000ms;
 }
 
 /*# sourceMappingURL=style.css.map */

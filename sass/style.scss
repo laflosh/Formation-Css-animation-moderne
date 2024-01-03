@@ -1,16 +1,17 @@
-$cd-btn: #011c37;
-$cd-txt: #15DEA5;
+$cd-primary: #011c37;
+$cd-secondary: #15DEA5;
 
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 80px;
     margin: 40px;
 }
 
 .btn_1{
-    background: $cd-btn;
-    color: $cd-txt;
+    background: $cd-primary;
+    color: $cd-secondary;
     font-size: 3rem;
     cursor: pointer;
     padding: 1.85rem 3rem;
@@ -19,4 +20,61 @@ body{
     &:hover{
         transform: scale(1.15);
     }
+}
+
+$cd-txt-2: #6300a0;
+$cd-box: #fff;
+$cd-txt--invalid: #fff;
+$cd-danger: #b20a37;
+
+.container_2{
+    background-color: rgb(237, 246, 247);
+}
+
+.form{
+    &__group{
+        color: $cd-txt-2;
+        font-family: 'Montserrat', sans-serif;
+        & input{
+            border: 2px solid $cd-box;
+            border-radius: 100rem;
+            font-size: 2.5rem;
+            outline: none;
+            padding: .5rem 1.5rem;
+            width: 100%;
+            transition: background-color 500ms;
+            &:focus{
+                border: 2px solid $cd-txt-2;
+            }
+            &:not(:focus):invalid{
+                background: $cd-danger;
+                border: 2px solid $cd-danger;
+                color: $cd-txt--invalid;
+            }
+        }
+    }
+}
+
+$ball-size: 300px;
+
+.btn_2{
+    background: $cd-primary;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+    border-radius: 10rem;
+    &:active + .ball{
+        transform: scale(1.0);
+    }
+}
+
+.ball{
+    width: $ball-size;
+    height: $ball-size;
+    background: $cd-secondary;
+    margin-bottom: 1rem;
+    border-radius: $ball-size * 0.5;
+    transform: scale(0.1);
+    transition: transform 4000ms;
 }
