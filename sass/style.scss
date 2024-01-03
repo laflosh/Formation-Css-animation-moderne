@@ -1,6 +1,13 @@
 $cd-btn: #011c37;
 $cd-txt: #15DEA5;
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
 .btn_1{
     background: $cd-btn;
     color: $cd-txt;
@@ -8,4 +15,8 @@ $cd-txt: #15DEA5;
     cursor: pointer;
     padding: 1.85rem 3rem;
     border-radius: 10rem;
+    transition: transform 400ms;
+    &:hover{
+        transform: scale(1.15);
+    }
 }
