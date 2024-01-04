@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   display: flex;
   flex-direction: column;
@@ -83,5 +84,159 @@ body {
   transform: scale(1.15);
   background-color: rgb(1, 28, 55);
 }
+
+.btn_4 {
+  background: red;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+}
+.btn_4:hover + .box {
+  transform: scale(3, 1.5); /*(positionX, position Y)*/
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background: #15DEA5;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  transition: transform 330ms ease-in-out;
+}
+
+.btn_5 {
+  background: red;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+}
+.btn_5:hover + .box_2 {
+  transform: scaleX(2.5);
+}
+
+.box_2 {
+  width: 150px;
+  height: 150px;
+  background: #15DEA5;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  transition: transform 330ms ease-in-out;
+}
+
+.btn_6 {
+  background: red;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+}
+.btn_6:hover + .box_3 {
+  transform: translate(100%, 0);
+}
+
+.box_3 {
+  width: 150px;
+  height: 150px;
+  background: #15DEA5;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  transition: transform 330ms ease-in-out;
+}
+
+.btn_7 {
+  background: red;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+}
+.btn_7:hover + .box_4 {
+  transform: scale(1);
+}
+.btn_7:hover + .box_4 span {
+  transform: translateY(0);
+}
+
+.box_4 {
+  width: 150px;
+  height: 150px;
+  background: #15DEA5;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  transform: scale(0.1);
+  transition: transform 330ms ease-in-out;
+  overflow: hidden;
+}
+.box_4 span {
+  display: inline-block;
+  transform: translateY(250%);
+  transition: transform 280ms ease-out 50ms;
+}
+
+.btn_8 {
+  background: red;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+}
+.btn_8:hover + .boxes > .boxes--rotDegrees {
+  transform: rotate(0deg);
+}
+.btn_8:hover + .boxes > .boxes--rotTurns {
+  transform: rotate(0turn);
+}
+
+.boxes__base {
+  width: 150px;
+  height: 150px;
+  background: #15DEA5;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  transition: transform 330ms ease-in-out;
+}
+.boxes--rotDegrees {
+  transform: rotate(-360deg);
+  transition: transform 500ms ease-in-out;
+}
+.boxes--rotTurns {
+  background: pink;
+  transform: rotate(-1turn);
+  transition: transform 500ms ease-in-out;
+}
+
+.btn_9 {
+  background: red;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+}
+.btn_9:hover + .box_5 {
+  transform: scale(1) rotate(0deg);
+}
+.btn_9:hover + .box_5 span {
+  transform: translateY(0);
+}
+
+.box_5 {
+  width: 150px;
+  height: 150px;
+  background: #15DEA5;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  transform: scale(0.1) rotate(-90deg);
+  transition: transform 330ms ease-in-out;
+  overflow: hidden;
+}
+.box_5 span {
+  display: block;
+  transform: translateY(250%);
+  transition: transform 280ms ease-out 50ms;
+}
+
+/* pencher un elem avec skew(), déplacement en 3D avec perpective(valeurs en px) rotate(valeurs)*/
 
 /*# sourceMappingURL=style.css.map */
