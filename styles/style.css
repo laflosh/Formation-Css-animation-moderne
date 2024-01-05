@@ -238,5 +238,32 @@ body {
 }
 
 /* pencher un elem avec skew(), déplacement en 3D avec perpective(valeurs en px) rotate(valeurs)*/
+.btn_10 {
+  background: #011c37;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.15rem 1.5rem;
+  border-radius: 10rem;
+  text-align: center;
+}
+.btn_10:active + .progress > .progress__bar {
+  transform: scaleX(1);
+}
+
+.progress {
+  width: 500px;
+  height: 25px;
+  border: 3px solid black;
+  margin-top: 15px;
+}
+.progress__bar {
+  background-color: #15DEA5;
+  width: 500px;
+  height: 25px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+}
 
 /*# sourceMappingURL=style.css.map */
